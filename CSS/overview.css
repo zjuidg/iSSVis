@@ -1,0 +1,132 @@
+.overview.slide_rect.normal{
+	stroke: none;
+    fill: #D4D5DA;
+    opacity: 0.4;
+}
+.overview.slide_rect.hover{
+	stroke: none;
+    fill: #D4D5DA;
+    opacity: 0.6
+}
+.overview.back_rect.normal{
+	stroke: none;
+
+    fill: #EFF1F3;
+}
+.overview.back_rect.hover{
+	stroke: none;
+
+    fill: #D4D5DA;
+}
+.overview.front_line.player0{
+	stroke: #31CDCB;
+	stroke-width: 1.5px;
+    fill: none;
+}
+.overview.front_line.player1{
+	stroke: #EE9C4A;
+	stroke-width: 1.5px;
+    fill: none;
+}
+.overview.front_circle.player0{
+	stroke: none;
+	/*stroke-width: 1.5px;*/
+    fill: #31CDCB;
+}
+.overview.front_circle.player1{
+	stroke: none;
+	/*stroke-width: 1.5px;*/
+    fill: #EE9C4A;
+}
+.front_circle.tech0{
+	stroke: none;
+	fill: #CCCCCC;
+}
+.front_circle.tech1{
+	stroke: none;
+	fill: #31c52f;
+}
+.front_circle.tech2{
+	stroke: none;
+	fill: #33547a;
+}
+.front_circle.tech3{
+	stroke: none;
+	fill: #7f42a9;
+}
+.front_circle.tech4{
+	stroke: none;
+	fill: #6e3901;
+}
+.front_circle.tech5{
+	stroke: none;
+	fill: #f7393a;
+}
+.front_circle.tech6{
+	stroke: none;
+	fill: #d86f92;
+}
+.front_circle.tech7{
+	stroke: none;
+	fill: #d38ffd;
+}
+.front_circle.tech8{
+	stroke: none;
+	fill: #fe5cde;
+}
+.front_circle.tech9{
+	stroke: none;
+	fill: #02531d;
+}
+
+
+.front_circle.tech0.lose{
+	stroke: #CCCCCC;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech1.lose{
+	stroke: #31c52f;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech2.lose{
+	stroke: #33547a;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech3.lose{
+	stroke: #7f42a9;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech4.lose{
+	stroke: #6e3901;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech5.lose{
+	stroke: #f7393a;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech6.lose{
+	stroke: #d86f92;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech7.lose{
+	stroke: #d38ffd;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech8.lose{
+	stroke: #fe5cde;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_circle.tech9.lose{
+	stroke: #02531d;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}

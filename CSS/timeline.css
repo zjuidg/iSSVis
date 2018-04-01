@@ -1,0 +1,446 @@
+/* #CCCCCC;#31c52f;#33547a;#7f42a9;#6e3901;    #f7393a;#d86f92;#d38ffd;#fe5cde;#02531d;*/
+
+
+.menu.fron_switch_button.selected{
+	stroke: none;
+	fill: #FFFFFF;
+}
+.menu.fron_switch_button.normal{
+	stroke: none;
+	fill: #64657A;
+}
+.menu.back_switch_button.selected{
+	stroke: none;
+	fill: #838595;
+}
+.menu.back_switch_button.normal{
+	stroke: none;
+	fill: #EFF1F3;
+}
+.score.back_rect.normal{
+	stroke: none;
+
+    fill: #EFF1F3;
+}
+.score.back_rect.hover{
+	stroke: none;
+
+    fill: #D4D5DA;
+}
+.score.front_rect{
+	stroke: none;
+
+    fill: #FFFFFF;
+}
+.score.front_rect.player0{
+	stroke: none;
+	stroke-width: 1.5px;
+    fill: #31CDCB;
+}
+.score.front_rect.player1{
+	stroke: none;
+	stroke-width: 1.5px;
+    fill: #EE9C4A;
+}
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    20% {opacity: 0.2;}/*过渡状态 透明度为0*/ 
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+
+
+.add.front_rect{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.back_rect{
+	stroke: #999999;
+	stroke-width: 0.5px;
+    fill: #FFFFFF;
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+
+.add.detail.back_rect{
+	fill: #FFFFFF;
+
+	stroke: #999999;
+	stroke-width: 0.5px;
+}
+.score.front_line.player0{
+	stroke: #31CDCB;
+	stroke-width: 2.5px;
+    fill: none;
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.score.front_line.player1{
+	stroke: #EE9C4A;
+	stroke-width: 2.5px;
+    fill: none;
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.score.front_point.player0{
+	stroke: none;
+	stroke-width: 1.5px;
+    fill: #31CDCB;
+}
+.score.front_point.player1{
+	stroke: none;
+	stroke-width: 1.5px;
+    fill: #EE9C4A;
+}
+.score.front_text.player0{
+	text-anchor: middle;
+	dominant-baseline: middle;
+    fill: #31CDCB;
+}
+.score.front_text.player1{
+	text-anchor: middle;
+	dominant-baseline: middle;
+    fill: #EE9C4A;
+}
+.back_rect.hover{
+	stroke: none;
+
+    fill: #D4D5DA;
+}
+.back_rect.normal{
+	stroke: none;
+
+    fill: #EFF1F3;
+}
+.back_line{
+	stroke: #ACADB2;
+	stroke-width: 0.5px;
+}
+.back_text{
+	text-anchor: middle;
+	dominant-baseline: middle;
+	font-size: 8px;
+}
+.button.front_rect.hidden{
+	stroke: none;
+    fill: #FFFFFF;
+
+}
+.button.front_rect.hover{
+	stroke: none;
+    fill: #FFFFFF;
+
+}
+.button.scroll_rect.normal{
+	stroke: none;
+
+    fill: #C1C1C1;
+}
+.button.scroll_rect.hover{
+	stroke: none;
+
+    fill: #A8A8A8;
+}
+.button.scroll_rect.hover{
+	stroke: none;
+
+    fill: #787878;
+}
+.front_line.player0{
+	stroke: #31CDCB;
+	stroke-width: 1.5px;
+    fill: none;
+}
+.front_line.player1{
+	stroke: #EE9C4A;
+	stroke-width: 1.5px;
+    fill: none;
+}
+
+.front_fan.player0{
+	stroke: #31CDCB;
+	stroke-width: 2.5px;
+    fill: #FFFFFF;
+}
+.front_fan.player1{
+	stroke: #EE9C4A;
+	stroke-width: 2.5px;
+    fill: #FFFFFF;
+}
+.add.front_circle.normal{
+	stroke: #60667D;
+	stroke-width: 1.5px;
+	fill: #FFFFFF;
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.selected{
+	stroke: #60667D;
+	stroke-width: 1.5px;
+	fill: #60667D;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_text.normal{
+	fill:#FFFFFF;
+	text-anchor: middle;
+    dominant-baseline: middle;
+     animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_rect.normal{
+	fill: #838594;
+	stroke: none;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_text.selected{
+	fill:#FFFFFF;
+	text-anchor: middle;
+    dominant-baseline: middle;
+     animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.button_rect{
+	stroke: none;
+	fill: #666666;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.button_tri{
+	stroke: none;
+	fill: #DDDDDD;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_line{
+	stroke: #60667D;
+	stroke-width: 1.5px;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech0{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #CCCCCC;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech1{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #31c52f;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech2{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #33547a;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech3{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #7f42a9;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech4{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #6e3901;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech5{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #f7393a;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech6{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #d86f92;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech7{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #d38ffd;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech8{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #fe5cde;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+.add.front_circle.tech9{
+	stroke: #FFFFFF;
+	stroke-width: 1.5px;
+	fill: #02531d;
+	 animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+}
+
+.front_fan_sector.tech0{
+	stroke: none;
+	fill: #CCCCCC;
+}
+.front_fan_sector.tech1{
+	stroke: none;
+	fill: #31c52f;
+}
+.front_fan_sector.tech2{
+	stroke: none;
+	fill: #33547a;
+}
+.front_fan_sector.tech3{
+	stroke: none;
+	fill: #7f42a9;
+}
+.front_fan_sector.tech4{
+	stroke: none;
+	fill: #6e3901;
+}
+.front_fan_sector.tech5{
+	stroke: none;
+	fill: #f7393a;
+}
+.front_fan_sector.tech6{
+	stroke: none;
+	fill: #d86f92;
+}
+.front_fan_sector.tech7{
+	stroke: none;
+	fill: #d38ffd;
+}
+.front_fan_sector.tech8{
+	stroke: none;
+	fill: #fe5cde;
+}
+.front_fan_sector.tech9{
+	stroke: none;
+	fill: #02531d;
+}
+
+.menu.front_rect.tech0{
+	stroke: none;
+	fill: #CCCCCC;
+}
+.menu.front_rect.tech1{
+	stroke: none;
+	fill: #31c52f;
+}
+.menu.front_rect.tech2{
+	stroke: none;
+	fill: #33547a;
+}
+.menu.front_rect.tech3{
+	stroke: none;
+	fill: #7f42a9;
+}
+.menu.front_rect.tech4{
+	stroke: none;
+	fill: #6e3901;
+}
+.menu.front_rect.tech5{
+	stroke: none;
+	fill: #f7393a;
+}
+.menu.front_rect.tech6{
+	stroke: none;
+	fill: #d86f92;
+}
+.menu.front_rect.tech7{
+	stroke: none;
+	fill: #d38ffd;
+}
+.menu.front_rect.tech8{
+	stroke: none;
+	fill: #fe5cde;
+}
+.menu.front_rect.tech9{
+	stroke: none;
+	fill: #02531d;
+}
+.menu.front_text{
+	fill: #333333;
+	text-anchor: middle;
+	dominant-baseline: middle;
+	font-family: arial;
+}
+.menu.front_line{
+	fill: none;
+	stroke: #666666;
+	stroke-width: 1px;
+}
+
+.front_fan_sector.tech0.lose{
+	stroke: #CCCCCC;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech1.lose{
+	stroke: #31c52f;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech2.lose{
+	stroke: #33547a;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech3.lose{
+	stroke: #7f42a9;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech4.lose{
+	stroke: #6e3901;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech5.lose{
+	stroke: #f7393a;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech6.lose{
+	stroke: #d86f92;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech7.lose{
+	stroke: #d38ffd;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech8.lose{
+	stroke: #fe5cde;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+.front_fan_sector.tech9.lose{
+	stroke: #02531d;
+	stroke-width: 2.5px;
+	fill: #FFFFFF;
+}
+
+
+
+
+
+
+

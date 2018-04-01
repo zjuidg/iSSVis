@@ -1,0 +1,209 @@
+
+html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    /*font-family: ;*/
+    -moz-user-select: none;
+}
+
+#MAINBODY {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(209,210,215);
+}
+/*MATRIX ########################################################################################################*/
+#MATRIX {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 100%;
+
+    overflow: visible;
+
+    background-color: rgb(255,255,255);
+
+    /*border-radius: 5px;*/
+}
+/*MIDDLE ################################################################*/
+#MIDDLE {
+    position: absolute;
+    top: 0;
+    left: 22.5%;
+    width: 8.5%;
+    height: 100%;
+
+    overflow: visible;
+
+    /*background-color: rgb(209,210,215);*/
+
+    /*border-radius: 5%;*/
+}
+    #svg_menu_bottom {
+        position: absolute;
+        top: 49%; 
+        left: 1%;
+        width: 105.88%; /*100 + 0.5/0.085 = 105.88*/
+        height: 51%; 
+
+        /*overflow: visible;*/
+        z-index: 100;
+    }
+/*RIGHT##########################################################################################################*/
+#RIGHT {
+    position: absolute;
+    top: 0;
+    left: 31.5%;
+    width: 69%;
+    height: 100%;
+
+
+    background-color: rgb(255,255,255);
+
+    /*border-radius: 5px;*/
+}
+    
+    #TOP_OVERVIEW {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 12.4%;
+        height: 12%;
+
+        overflow: visible;
+        z-index: 100;
+    }
+    
+    #TOP_TIMELINE {
+        position: absolute;
+        top: 0%;
+        left: 12.4%; 
+        width: 86%; /*87.6*(1-0.018) = 0.86*/
+        height: 12%;
+
+        overflow: hidden;
+
+    }
+        #svg_top_score{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 10%;
+            height: 100%;
+
+            /*overflow: hidden;*/
+            z-index: 50;
+
+            background-color: rgb(255,255,255);
+        }
+        #svg_top_main {
+            position: absolute;
+            top: 0%;
+            left: -21%;/*(147-85)/2=31;31-10=21*/
+            width: 147%;/*85 * 1.73 = 147*/
+            height: 100%;
+
+            /*border-color: rgb(193,193,193);
+            border-style: solid;
+            border-width: 1px;*/
+        }
+        #svg_top_button {
+            position: absolute;
+            top: 0%;
+            left: 95%;
+            width: 5%;
+            height: 100%;
+
+            background-color: rgb(255,255,255);
+            /*border-color: rgb(193,193,193);
+            border-style: solid;
+            border-width: 1px;*/
+        }
+
+#OVERVIEW::-webkit-scrollbar{width:6%;}
+::-webkit-scrollbar-track{background-color:#F1F1F1;}
+::-webkit-scrollbar-thumb{background-color:#C1C1C1;}
+::-webkit-scrollbar-thumb:hover {background-color:#A8A8A8}
+::-webkit-scrollbar-thumb:active {background-color:#787878}
+#OVERVIEW {
+    position: absolute;
+    top: 12.5%;
+    left: 0%;
+    width: 12.4%;
+    height: 87.5%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+   /* border-color: rgb(193,193,193);
+    border-style: solid;
+    border-width: 1px;*/
+}
+
+#TIMELINE::-webkit-scrollbar{width:1.8%;}
+::-webkit-scrollbar-track{background-color:#F1F1F1;}
+::-webkit-scrollbar-thumb{background-color:#C1C1C1;}
+::-webkit-scrollbar-thumb:hover {background-color:#A8A8A8}
+::-webkit-scrollbar-thumb:active {background-color:#787878}
+
+#TIMELINE{
+    position: absolute;
+    top: 12.5%;
+    left: 12.4%;
+    width: 87.6%;
+    height: 87.5%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+ /*   border-color: rgb(193,193,193);
+    border-style: solid;
+    border-width: 1px;*/
+}
+    #svg_score {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 10%;
+        height: 100%;
+
+        overflow: hidden;
+
+        background-color: rgb(255,255,255);
+    /*    border-color: rgb(193,193,193);
+        border-style: solid;
+        border-width: 1px;*/
+    }
+    #svg_main {
+        position: absolute;
+        top: 0%;
+        left: -21%;/*(147-85)/2=31;31-10=21*/
+        width: 147%;/*85 * 1.73 = 147*/
+        height: 100%;
+
+        /*border-color: rgb(193,193,193);
+        border-style: solid;
+        border-width: 1px;*/
+    }
+    #svg_button {
+        position: absolute;
+        top: 0%;
+        left: 95%;
+        width: 5%;
+        height: 100%;
+
+        background-color: rgb(255,255,255);
+        /*border-color: rgb(193,193,193);
+        border-style: solid;
+        border-width: 1px;*/
+    }

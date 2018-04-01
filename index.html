@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iTTVis-2.0</title>
+
+    <link href="CSS/index.css" rel="stylesheet">
+    <link href="CSS/matrix.css" rel="stylesheet">
+    <link href="CSS/timeline.css" rel="stylesheet">
+    <link href="CSS/overview.css" rel="stylesheet">
+    <link href="CSS/top.css" rel="stylesheet">
+    <link href="CSS/menu.css" rel="stylesheet">
+
+    <script src="LIB/jQuery/jquery.min.js"></script>
+    <script src="LIB/d3/d3.js"></script>
+
+    <script src="JS/dataManager.js"></script>
+    
+    <script src="JS/keyEventListener.js"></script>
+</head>
+<body onselectstart="return false" onKeyDown="keyDownFunc(event)" onkeyup="keyOnFunc(event)">
+    <div id="MAINBODY">
+        <div id="RIGHT">
+            <div id="TOP_OVERVIEW"></div>
+            <div id="TOP_TIMELINE"></div>
+            
+            <div id="OVERVIEW"></div>
+            <div id="TIMELINE"></div>
+        </div>
+
+        <div id="MIDDLE">
+            <div id="MENU"></div>
+        </div>
+
+        <div id="MATRIX"></div>
+    </div>
+
+    <script src="JS/winning_rate/numeric-1.2.6.js"></script>
+    <script src="JS/winning_rate/Statistic.js"></script>
+    <script src="JS/winning_rate/calcRateAvaiFunc.js"></script>
+    
+    <script src="JS/top_timeline.js"></script>
+    <script src="JS/matrix.js"></script>
+    <script src="JS/timeline.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/overview.js"></script>
+    <script src="JS/top_overview.js"></script>
+    <script src="JS/main.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+.top.back_rect{
+	fill: #63667C;
+}
+.top.back_text{
+	fill: #FFFFFF;
+	text-anchor: middle;
+	dominant-baseline: middle;
+
+	font-family: arial
+}

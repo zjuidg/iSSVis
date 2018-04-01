@@ -1,0 +1,252 @@
+.link.normal {
+    stroke: rgb(100, 103, 121);
+    stroke-width: 1px;
+
+    fill: none;
+}
+.link_p1.normal {
+    stroke: rgb(106, 202, 202);
+    stroke-width: 1px;
+
+    fill: none;
+}
+.link_p2.normal {
+    stroke: rgb(225, 157, 90);
+    stroke-width: 1px;
+
+    fill: none;
+}
+.link.hover {
+     stroke: rgb(100, 103, 121);
+     stroke-width: 4px;
+
+     fill: none;
+ }
+.link_p1.hover {
+    stroke: rgb(106, 202, 202);
+    stroke-width: 4px;
+
+    fill: none;
+}
+.link_p2.hover {
+    stroke: rgb(225, 157, 90);
+    stroke-width: 4px;
+
+    fill: none;
+}
+.link.lock {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+
+    fill: none;
+}
+.link_p1.lock {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+
+    fill: none;
+}
+.link_p2.lock {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+
+    fill: none;
+}
+
+.mainTag_path, .mainTag_font, .branchTag_path, .branchTag_font {
+    cursor: pointer;
+}
+
+.mainTag_path.normal {
+    stroke: rgb(100, 103, 121);
+    stroke-width: 2px;
+
+    fill: rgb(255, 255, 255);
+}
+.mainTag_font.normal {
+    stroke-width: 0;
+    fill: rgb(100, 103, 121);
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.mainTag_path.hover {
+    stroke: rgb(100, 103, 121);
+    stroke-width: 2px;
+
+    fill: rgb(100, 103, 121);
+}
+.mainTag_font.hover {
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.mainTag_path.lock {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+
+    cursor: not-allowed;
+
+    fill: rgb(255, 255, 255);
+}
+.mainTag_font.lock {
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+
+    cursor: not-allowed;
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.branchTag_path.normal {
+    stroke: rgb(100, 103, 121);
+    stroke-width: 1px;
+
+    fill: rgb(255, 255, 255);
+}
+.branchTag_font.normal {
+    stroke-width: 0;
+    fill: rgb(100, 103, 121);
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.branchTag_path.hover {
+    stroke: rgb(100, 103, 121);
+    stroke-width: 1px;
+
+    fill: rgb(100, 103, 121);
+}
+.branchTag_font.hover {
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.branchTag_path.lock {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+
+    cursor: not-allowed;
+
+    fill: rgb(255, 255, 255);
+}
+.branchTag_font.lock {
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+
+    cursor: not-allowed;
+
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.player_font {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    cursor: default;
+    fill: rgb(255, 255, 255);
+}
+
+.grid_bg.normal {
+    stroke-width: 0;
+    fill: rgb(100, 103, 121);
+}
+.grid_bg.hover {
+    stroke-width: 0;
+    fill: rgb(100, 103, 121);
+}
+.grid_bg.lock {
+    cursor: not-allowed;
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+}
+
+.grid_rect.normal {
+    stroke-width: 0;
+    fill: rgb(255, 255, 255);
+}
+.grid_rect.hover {
+    stroke-width: 0;
+    fill: rgb(225, 230, 255);
+}
+.grid_rect.lock {
+    cursor: not-allowed;
+    stroke-width: 0px;
+    fill: rgb(255, 255, 255);
+}
+
+.grid_circle.chosen {
+    stroke-width: 0;
+    opacity: 1;
+}
+.grid_circle.dechoose {
+    stroke-width: 0;
+    opacity: 0;
+}
+.grid_circle.lock {
+    stroke-width: 0;
+    opacity: 0;
+
+    cursor: not-allowed;
+}
+
+.matrix_btn {
+    cursor: pointer;
+}
+.chosen > .btn_bg {
+    stroke-width: 0;
+    fill: rgb(100,103,121);
+    cursor: pointer;
+}
+.chosen > .btn_fg {
+    stroke-width: 0;
+    fill: rgb(255,255,255);
+    cursor: pointer;
+}
+.dechosen > .btn_bg {
+    stroke-width: 0;
+    fill: rgb(230,230,230);
+    cursor: pointer;
+}
+.dechosen > .btn_fg {
+    stroke-width: 0;
+    fill: rgb(200,200,200);
+    cursor: pointer;
+}
+.nchosen > .btn_bg {
+    stroke-width: 0;
+    fill: rgb(114,116,125);
+    cursor: not-allowed;
+}
+.nchosen > .btn_fg {
+    stroke-width: 0;
+    fill: rgb(192,192,192);
+    cursor: not-allowed;
+}
+.ndechosen > .btn_bg {
+    stroke-width: 0;
+    fill: rgb(179,179,179);
+    cursor: not-allowed;
+}
+.ndechosen > .btn_fg {
+    stroke-width: 0;
+    fill: rgb(164,164,164);
+    cursor: not-allowed;
+}
+
+.hint_bg {
+    stroke-width: 0;
+    fill: rgb(100,103,121);
+    opacity: 0.8;
+}
+.hint_text {
+    stroke-width: 0;
+    fill: rgb(255,255,255);
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
