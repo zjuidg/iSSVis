@@ -87,14 +87,24 @@
     animation-duration: 0.5s;/*动画持续时间*/  
 }
 .score.front_point.player0{
-	stroke: none;
-	stroke-width: 1.5px;
+	stroke: #31CDCB;
+	stroke-width: 4px;
     fill: #31CDCB;
 }
 .score.front_point.player1{
-	stroke: none;
-	stroke-width: 1.5px;
+	stroke: #EE9C4A;
+	stroke-width: 4px;
     fill: #EE9C4A;
+}
+.score.front_point.player0_neg{
+	stroke: #31CDCB;
+	stroke-width: 4px;
+    fill: none;
+}
+.score.front_point.player1_neg{
+	stroke: #EE9C4A;
+	stroke-width: 4px;
+    fill: none;
 }
 .score.front_text.player0{
 	text-anchor: middle;
@@ -118,7 +128,7 @@
 }
 .back_line{
 	stroke: #ACADB2;
-	stroke-width: 0.5px;
+	stroke-width: 3px;
 }
 .back_text{
 	text-anchor: middle;

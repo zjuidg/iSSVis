@@ -10,7 +10,7 @@ class mainTop_Overview {
             this.TITLE_pos = {"x0":0, 
                               "y0": 0, 
                               "width":this.svg_width*1.5, 
-                              "height":this.svg_height*0.7 };
+                              "height":this.svg_height*0.5 };
             let pos = this.TITLE_pos;
             this.TITLE_frame = {"left": 0, 
                                 "right": 0, 
@@ -30,7 +30,7 @@ class mainTop_Overview {
             this.top_pos = {"x0":0, 
                             "y0": this.TITLE_pos.y0 + this.TITLE_pos.height, 
                             "width":this.svg_width, 
-                            "height":this.svg_height*0.3 };
+                            "height":this.svg_height*0.5 };
             let pos = this.top_pos;
             this.top_frame = {"left": 0.02 * pos.width,
                               "right": 0.02 * pos.width,
@@ -38,10 +38,10 @@ class mainTop_Overview {
                               "bottom": 0.05 * pos.height }
             let frame = this.top_frame;
             this.top = {};
-            this.top.x0 = pos.x0 + frame.left;
-            this.top.y0 = pos.y0 + frame.top;
+            this.top.x0 = pos.x0;
+            this.top.y0 = pos.y0 + frame.top + 5;
             this.top.width = pos.width - frame.left - frame.right;
-            this.top.height = pos.height - frame.top - frame.bottom;
+            this.top.height = pos.height - frame.top - frame.bottom - 3;
 
             this.top.gap = 0.2 * this.top.height;
             this.top.but_width = (this.top.width - 2*this.top.gap)/3; 
@@ -53,7 +53,10 @@ class mainTop_Overview {
 
         this.paint_top_overview();
     }
-
+    switch_table(){
+        this.svg.selectAll("*").remove();
+        this.paint_top_overview();
+    };
     paint_top_overview(){
         let this_ = this;
        
@@ -72,29 +75,45 @@ class mainTop_Overview {
             .attr("x", title.x0 + title.width/2 +title.r/2)
             .attr("y", title.y0 + title.height/2)
             .style("font-size", title.fz )
-            .text("iTTVis-2.0")
+            .text("iSSVis")
         }
         
         //top
         if(1){
             let top = this_.top;
-            for (let i = 0; i < 3; i++){
-                this_.svg.append("rect")
-                .attr("class", "top back_rect")
-                .attr("x", top.x0 + i*(top.gap+top.but_width))
-                .attr("y", top.y0 )
-                .attr("width", top.but_width)
-                .attr("height", top.but_height)
-                .attr("rx", top.r)
-                .attr("ry", top.r);
-                this_.svg.append("svg:text")
-                .attr("class", "top back_text")
-                .attr("x", top.x0 + i*(top.gap+top.but_width) + top.but_width/2)
-                .attr("y", top.y0 + top.but_height/2)
-                .style("font-size", top.fz)
-                .text(top.but_nl[i]);
-            }
+            this_.svg
+            .append("svg:image")
+            .attr("xlink:href", function(d,i){
+                if(timeline.playerTop == 1){
+                    return "SRC/image/axis_0.svg";
+                }
+                return "SRC/image/axis_1.svg";
+            })
+            .attr("x", top.x0)
+            .attr("y", top.y0)
+            .attr("width", 3*(top.gap + top.but_width))
+            .attr("height", top.but_height)
         }
+            
+        // if(1){
+        //     let top = this_.top;
+        //     for (let i = 0; i < 3; i++){
+        //         this_.svg.append("rect")
+        //         .attr("class", "top back_rect")
+        //         .attr("x", top.x0 + i*(top.gap+top.but_width))
+        //         .attr("y", top.y0 )
+        //         .attr("width", top.but_width)
+        //         .attr("height", top.but_height)
+        //         .attr("rx", top.r)
+        //         .attr("ry", top.r);
+        //         this_.svg.append("svg:text")
+        //         .attr("class", "top back_text")
+        //         .attr("x", top.x0 + i*(top.gap+top.but_width) + top.but_width/2)
+        //         .attr("y", top.y0 + top.but_height/2)
+        //         .style("font-size", top.fz)
+        //         .text(top.but_nl[i]);
+        //     }
+        // }
 
         // .on("click", function(d,i){
         //     if(overview.high_or_middle == "high"){

@@ -186,6 +186,7 @@ class mainTop_Timeline {
                 }
                 this_.switch_table();
                 timeline.switch_direction();
+                top_overview.switch_table();
             });
         }
         for(let i = 0; i < 4; i++){

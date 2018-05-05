@@ -6436,1474 +6436,3707 @@ class mainTimeline {
             .attr("id", "back_rect");
 
             WinRate_rect.append("rect")//left
-            .attr("class", `main back_rect normal`)
-            .attr("x", function(d,i){//this_可以读取？
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0;
-                }
-            })
-            .attr("y", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
-            })
-            .attr("width", function(d,i){
-                return this_.sma_rect_width;
-            })
-            .attr("height", function(d,i){
-                return this_.rect_height;
-            });
+                .attr("class", `main back_rect normal`)
+                .attr("x", function(d,i){//this_可以读取？
+                    if (WinRate_name == "LLWinRate"){
+                        return this_.LLWinRate_x0;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        return this_.LWinRate_x0;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        return this_.RWinRate_x0;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        return this_.RRWinRate_x0;
+                    }
+                })
+                .attr("y", function(d,i){
+                    return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
+                })
+                .attr("width", function(d,i){
+                    return this_.sma_rect_width;
+                })
+                .attr("height", function(d,i){
+                    return this_.rect_height;
+                });
 
             WinRate_rect.append("rect")//middle
-            .attr("class", `main back_rect normal`)
-            .attr("x", function(d,i){//this_可以读取？
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
-                }
-            })
-            .attr("y", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
-            })
-            .attr("width", function(d,i){
-                return this_.sma_rect_width;
-            })
-            .attr("height", function(d,i){
-                return this_.rect_height;
-            });
+                .attr("class", `main back_rect normal`)
+                .attr("x", function(d,i){//this_可以读取？
+                    if (WinRate_name == "LLWinRate"){
+                        return this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        return this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        return this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        return this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                })
+                .attr("y", function(d,i){
+                    return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
+                })
+                .attr("width", function(d,i){
+                    return this_.sma_rect_width;
+                })
+                .attr("height", function(d,i){
+                    return this_.rect_height;
+                });
 
             WinRate_rect.append("rect")//right
-            .attr("class", `main back_rect normal`)
-            .attr("x", function(d,i){//this_可以读取？
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
-                }
-            })
-            .attr("y", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
-            })
-            .attr("width", function(d,i){
-                return this_.sma_rect_width;
-            })
-            .attr("height", function(d,i){
-                return this_.rect_height;
-            });
+                .attr("class", `main back_rect normal`)
+                .attr("x", function(d,i){//this_可以读取？
+                    if (WinRate_name == "LLWinRate"){
+                        return this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        return this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        return this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        return this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width + this_.sma_gap_width;
+                    }
+                })
+                .attr("y", function(d,i){
+                    return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap;
+                })
+                .attr("width", function(d,i){
+                    return this_.sma_rect_width;
+                })
+                .attr("height", function(d,i){
+                    return this_.rect_height;
+                });
 
             let WinRate_back_text = WinRate.append("g")
             .attr("id", "back_text");
             let font_size = 8;
 
-            // WinRate_back_text.append("text")//top
-            // .attr("class", `main back_text`)
-            // .attr("dx", function(d,i){//
-            //     if (WinRate_name == "LLWinRate"){
-            //         return this_.LLWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "LWinRate"){
-            //         return this_.LWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "RWinRate"){
-            //         return this_.RWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "RRWinRate"){
-            //         return this_.RRWinRate_x0 - font_size/2;
-            //     }
-            // })
-            // .attr("dy", function(d,i){
-            //     return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + font_size/2;
-            // })
-            // .text("1");
+            // WinRate_back_text.append("text")//mid
+            //     .attr("class", `main back_text`)
+            //     .attr("dx", function(d,i){//
+            //         if (WinRate_name == "LLWinRate"){
+            //             return this_.LLWinRate_x0 - font_size/2;
+            //         }
+            //         else if (WinRate_name == "LWinRate"){
+            //             return this_.LWinRate_x0 - font_size/2;
+            //         }
+            //         else if (WinRate_name == "RWinRate"){
+            //             return this_.RWinRate_x0 - font_size/2;
+            //         }
+            //         else if (WinRate_name == "RRWinRate"){
+            //             return this_.RRWinRate_x0 - font_size/2;
+            //         }
+            //     })
+            //     .attr("dy", function(d,i){
+            //         return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
+            //     })
+            //     .text("0");
 
-            WinRate_back_text.append("text")//mid
-            .attr("class", `main back_text`)
-            .attr("dx", function(d,i){//
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0 - font_size/2;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0 - font_size/2;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0 - font_size/2;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0 - font_size/2;
-                }
-            })
-            .attr("dy", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
-            })
-            .text("0");
-
-            // WinRate_back_text.append("text")//bot
-            // .attr("class", `main back_text`)
-            // .attr("dx", function(d,i){//
-            //     if (WinRate_name == "LLWinRate"){
-            //         return this_.LLWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "LWinRate"){
-            //         return this_.LWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "RWinRate"){
-            //         return this_.RWinRate_x0 - font_size/2;
-            //     }
-            //     else if (WinRate_name == "RRWinRate"){
-            //         return this_.RRWinRate_x0 - font_size/2;
-            //     }
-            // })
-            // .attr("dy", function(d,i){
-            //     return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height - font_size/2;
-            // })
-            // .text("-1");
 
 
             let WinRate_back_line = WinRate.append("g")
             .attr("id", "back_line");
 
             WinRate_back_line.append("line")
-            .attr("class", `main back_line`)
-            .attr("x1", function(d,i){//this_可以读取？
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0;
-                }
-            })
-            .attr("y1", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
-            })
-            .attr("x2", function(d,i){//this_可以读取？
-                if (WinRate_name == "LLWinRate"){
-                    return this_.LLWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    return this_.LWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    return this_.RWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    return this_.RRWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
-                }
-            })
-            .attr("y2", function(d,i){
-                return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
-            })
-            .attr("stroke-dasharray","5,5");
+                .attr("class", `main back_line`)
+                .attr("x1", function(d,i){//this_可以读取？
+                    if (WinRate_name == "LLWinRate"){
+                        return this_.LLWinRate_x0;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        return this_.LWinRate_x0;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        return this_.RWinRate_x0;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        return this_.RRWinRate_x0;
+                    }
+                })
+                .attr("y1", function(d,i){
+                    return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
+                })
+                .attr("x2", function(d,i){//this_可以读取？
+                    if (WinRate_name == "LLWinRate"){
+                        return this_.LLWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        return this_.LWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        return this_.RWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        return this_.RRWinRate_x0 + this_.sma_rect_width*3 + this_.sma_gap_width*2;
+                    }
+                })
+                .attr("y2", function(d,i){
+                    return i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height/2;
+                })
+                .attr("stroke-dasharray","10,5");
 
             let WinRate_fron = WinRate.append("g")
             .attr("id", "fron");
 
-            WinRate_fron.append("path")
-            .attr("class", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"]
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return `score front_line player${rally[rally_seq-1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return `score front_line player${rally[rally_seq]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_line player${rally[rally_seq+1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_line player${rally[rally_seq+2]["hitplayer"]}`
-                }
-            })
-            .attr("d", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-                
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height *0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height *0.1;
-                let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
-                    y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+            // WinRate_fron.append("path")
+                //     .attr("class", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"]
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_line player${rally[rally_seq-1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_line player${rally[rally_seq]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_line player${rally[rally_seq+1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_line player${rally[rally_seq+2]["hitplayer"]}`
+                //         }
+                //     })
+                //     .attr("d", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+                        
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height *0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height *0.1;
+                //         let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                //             y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
 
-                    y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+                //             y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
 
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "";
-                    }
-                    let x0 = this_.LLWinRate_x0 + this_.sma_rect_width/2,
-                    x1 = this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
-                    x2 = this_.LLWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "";
+                //             }
+                //             let x0 = this_.LLWinRate_x0 + this_.sma_rect_width/2,
+                //             x1 = this_.LLWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
+                //             x2 = this_.LLWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                            
+                //             let tech = rally[rally_seq - 1]["tech"];
+                //             let ballpos = rally[rally_seq - 1]["ballpos"];
+                //             let pos = rally[rally_seq - 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+
+                //             let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if (ballpos == -1){
+                //                 return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
+                //             }
+                //             return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "";
+                //             }
+                //             let x0 = this_.LWinRate_x0 + this_.sma_rect_width/2,
+                //             x1 = this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
+                //             x2 = this_.LWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                            
+                //             let tech = rally[rally_seq]["tech"];
+                //             let ballpos = rally[rally_seq]["ballpos"];
+                //             let pos = rally[rally_seq]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             if (ballpos == -1){
+                //                 return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
+                //             }
+                //             return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             let x0 = this_.RWinRate_x0 + this_.sma_rect_width/2,
+                //             x1 = this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
+                //             x2 = this_.RWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                            
+                //             let tech = rally[rally_seq + 1]["tech"];
+                //             let ballpos = rally[rally_seq + 1]["ballpos"];
+                //             let pos = rally[rally_seq + 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+
+                //             if (ballpos == -1){
+                //                 return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
+                //             }
+                //             return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             let x0 = this_.RRWinRate_x0 + this_.sma_rect_width/2,
+                //             x1 = this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
+                //             x2 = this_.RRWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                            
+                //             let tech = rally[rally_seq + 2]["tech"];
+                //             let ballpos = rally[rally_seq + 2]["ballpos"];
+                //             let pos = rally[rally_seq + 2]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if (ballpos == -1){
+                //                 return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
+                //             }                
+                //             return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
+                //         } 
+                //     });
+            let width_bar = 10;
+            WinRate_fron.append("rect")//left
+                .attr("class", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
                     
-                    let tech = rally[rally_seq - 1]["tech"];
-                    let ballpos = rally[rally_seq - 1]["ballpos"];
-                    let pos = rally[rally_seq - 1]["pos"];
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-
-                    let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
                         }
-                        else{
-                            return scale_neg(value);
-                        }
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if (ballpos == -1){
-                        return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
-                    }
-                    return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "";
-                    }
-                    let x0 = this_.LWinRate_x0 + this_.sma_rect_width/2,
-                    x1 = this_.LWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
-                    x2 = this_.LWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                    
-                    let tech = rally[rally_seq]["tech"];
-                    let ballpos = rally[rally_seq]["ballpos"];
-                    let pos = rally[rally_seq]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
-
-                    }
-                    if (ballpos == -1){
-                        return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
-                    }
-                    return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    let x0 = this_.RWinRate_x0 + this_.sma_rect_width/2,
-                    x1 = this_.RWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
-                    x2 = this_.RWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                    
-                    let tech = rally[rally_seq + 1]["tech"];
-                    let ballpos = rally[rally_seq + 1]["ballpos"];
-                    let pos = rally[rally_seq + 1]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
-
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-
-                    if (ballpos == -1){
-                        return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
-                    }
-                    return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    let x0 = this_.RRWinRate_x0 + this_.sma_rect_width/2,
-                    x1 = this_.RRWinRate_x0 + this_.sma_rect_width + this_.sma_gap_width + this_.sma_rect_width/2,
-                    x2 = this_.RRWinRate_x0 + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                    
-                    let tech = rally[rally_seq + 2]["tech"];
-                    let ballpos = rally[rally_seq + 2]["ballpos"];
-                    let pos = rally[rally_seq + 2]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
-
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if (ballpos == -1){
-                        return `M ${x0} ${scale(y0)} L ${x2} ${scale(y2)}`
-                    }                
-                    return `M ${x0} ${scale(y0)} L ${x1} ${scale(y1)} L ${x2} ${scale(y2)}`;
-                } 
-            })
-            
-            WinRate_fron.append("circle")//left
-            .attr("class", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"]
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
-                }
-            })
-            .attr("cx", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return this_.LLWinRate_x0 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return this_.LWinRate_x0 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RWinRate_x0 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RRWinRate_x0 + this_.sma_rect_width/2;
-                }
-            })
-            .attr("cy", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
-
-                let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
-                    y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
-
-                    y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
-
-
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq - 1]["tech"];
-                    let ballpos = rally[rally_seq - 1]["ballpos"];
-                    let pos = rally[rally_seq - 1]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-
-                    let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
                         }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y0);
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq]["tech"];
-                    let ballpos = rally[rally_seq]["ballpos"];
-                    let pos = rally[rally_seq]["pos"];
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
                         }
-                        else{
-                            return scale_neg(value);
+                        if(min < 0){
+                            pos_min = min;
                         }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y0);
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 1]["tech"];
-                    let ballpos = rally[rally_seq + 1]["ballpos"];
-                    let pos = rally[rally_seq + 1]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
                         }
-                        else{
-                            return scale_neg(value);
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return `score front_point player${rally[rally_seq-1]["hitplayer"]}${scale(y0)}`;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
                         }
+                         let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y0);
-
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 2]["tech"];
-                    let ballpos = rally[rally_seq + 2]["ballpos"];
-                    let pos = rally[rally_seq + 2]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
                         }
-                        else{
-                            return scale_neg(value);
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
                         }
-
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y0);
-                } 
-            })
-            .attr("r", this_.score_r)
-            .attr("visibility", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
-
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "hidden";
-                    }
-                    return "visible";
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "hidden";
-                    }
-                    return "visible";
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "hidden";
-                    }
-                   
-                    return "visible";
-
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "hidden";
-                    }
-                    
-                    return "visible";
-                } 
-            });
-            WinRate_fron.append("circle")//middle
-            .attr("class", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"]
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
-                }
-            })
-            .attr("cx", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
-                }
-            })
-            .attr("cy", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
-
-                let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
-                    y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
-
-                    y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
-
-
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq - 1]["tech"];
-                    let ballpos = rally[rally_seq - 1]["ballpos"];
-                    let pos = rally[rally_seq - 1]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-
-                    let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        if(min < 0){
+                            pos_min = min;
                         }
-                        else{
-                            return scale_neg(value);
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq]["hitplayer"]}${scale(y0)}`
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+1]["hitplayer"]}${scale(y0)}`
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+2]["hitplayer"]}${scale(y0)}`
+                    }
+                })
+                .attr("x", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
+                        }
+                        return this_.LLWinRate_x0 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
+                        }
+                        return this_.LWinRate_x0 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RWinRate_x0 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RRWinRate_x0 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                })
+                .attr("y", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+                    
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
                         }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if(ballpos != -1){
-                        return scale(y1);
-                    }
-                    return "";
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq]["tech"];
-                    let ballpos = rally[rally_seq]["ballpos"];
-                    let pos = rally[rally_seq]["pos"];
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
                         }
-                        else{
-                            return scale_neg(value);
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    } 
+                })
+                .attr("width", width_bar)
+                .attr("height",function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
                         }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if(ballpos != -1){
-                        return scale(y1);
-                    }
-                    return "";
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 1]["tech"];
-                    let ballpos = rally[rally_seq + 1]["ballpos"];
-                    let pos = rally[rally_seq + 1]["pos"];
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
                         }
-                        else{
-                            return scale_neg(value);
+                        if(min < 0){
+                            pos_min = min;
                         }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if(ballpos != -1){
-                        return scale(y1);
-                    }
-                    return "";
-
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 2]["tech"];
-                    let ballpos = rally[rally_seq + 2]["ballpos"];
-                    let pos = rally[rally_seq + 2]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
                         }
-                        else{
-                            return scale_neg(value);
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
                         }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    if(ballpos != -1){
-                        return scale(y1);
-                    }
-                    return "";
-                } 
-            })
-            .attr("r", this_.score_r)
-            .attr("visibility", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
-
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "hidden";
-                    }
-                    let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
                     
-                    if(ballpos != -1){
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y0);
+                    } 
+                } )
+                .attr("visibility", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "hidden";
+                        }
                         return "visible";
                     }
-                    return "hidden";
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "hidden";
-                    }
-                    
-                    let ballpos = rally[rally_seq]["ballpos"];
-
-                   if(ballpos != -1){
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "hidden";
+                        }
                         return "visible";
                     }
-                    return "hidden";
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "hidden";
+                        }
+                       
+                        return "visible";
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "hidden";
+                        }
+                        
+                        return "visible";
+                    } 
+                });
+            // WinRate_fron.append("circle")//left
+                //     .attr("class", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"]
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
+                //         }
+                //     })
+                //     .attr("cx", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LLWinRate_x0 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LWinRate_x0 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RWinRate_x0 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RRWinRate_x0 + this_.sma_rect_width/2;
+                //         }
+                //     })
+                //     .attr("cy", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                //         let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                //             y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                //             y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq - 1]["tech"];
+                //             let ballpos = rally[rally_seq - 1]["ballpos"];
+                //             let pos = rally[rally_seq - 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+
+                //             let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y0);
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq]["tech"];
+                //             let ballpos = rally[rally_seq]["ballpos"];
+                //             let pos = rally[rally_seq]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y0);
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 1]["tech"];
+                //             let ballpos = rally[rally_seq + 1]["ballpos"];
+                //             let pos = rally[rally_seq + 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y0);
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 2]["tech"];
+                //             let ballpos = rally[rally_seq + 2]["ballpos"];
+                //             let pos = rally[rally_seq + 2]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y0);
+                //         } 
+                //     })
+                //     .attr("r", this_.score_r)
+                //     .attr("visibility", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "hidden";
+                //             }
+                //             return "visible";
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "hidden";
+                //             }
+                //             return "visible";
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                           
+                //             return "visible";
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                            
+                //             return "visible";
+                //         } 
+                //     });
+            WinRate_fron.append("rect")//middle
+                .attr("class", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
+                        }
+
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq-1]["hitplayer"]}${scale(y1)}`
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
+                        }
+                         let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq]["hitplayer"]}${scale(y1)}`
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+1]["hitplayer"]}${scale(y1)}`
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+2]["hitplayer"]}${scale(y1)}`
+                    }
+                })
+                .attr("x", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
+                        }
+                        return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
+                        }
+                        return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                })
+                .attr("y", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    } 
+                })
+                .attr("width", width_bar)
+                .attr("height", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        if(ballpos != -1){
+                            return scale(y1);
+                        }
+                        return "";
+                    } 
+                })
+                .attr("visibility", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "hidden";
+                        }
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        
+                        if(ballpos != -1){
+                            return "visible";
+                        }
                         return "hidden";
                     }
-                    
-                    let ballpos = rally[rally_seq + 1]["ballpos"];
-                    
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "hidden";
+                        }
+                        
+                        let ballpos = rally[rally_seq]["ballpos"];
 
-                    if(ballpos != -1){
+                       if(ballpos != -1){
+                            return "visible";
+                        }
+                        return "hidden";
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "hidden";
+                        }
+                        
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        
+
+                        if(ballpos != -1){
+                            return "visible";
+                        }
+                        return "hidden";
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "hidden";
+                        }
+                        
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+
+                        if(ballpos != -1){
+                            return "visible";
+                        }
+                        return "hidden";
+                    } 
+                });
+            // WinRate_fron.append("circle")//middle
+                //     .attr("class", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"]
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
+                //         }
+                //     })
+                //     .attr("cx", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width) + this_.sma_rect_width/2;
+                //         }
+                //     })
+                //     .attr("cy", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                //         let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                //             y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                //             y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq - 1]["tech"];
+                //             let ballpos = rally[rally_seq - 1]["ballpos"];
+                //             let pos = rally[rally_seq - 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+
+                //             let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if(ballpos != -1){
+                //                 return scale(y1);
+                //             }
+                //             return "";
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq]["tech"];
+                //             let ballpos = rally[rally_seq]["ballpos"];
+                //             let pos = rally[rally_seq]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if(ballpos != -1){
+                //                 return scale(y1);
+                //             }
+                //             return "";
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 1]["tech"];
+                //             let ballpos = rally[rally_seq + 1]["ballpos"];
+                //             let pos = rally[rally_seq + 1]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if(ballpos != -1){
+                //                 return scale(y1);
+                //             }
+                //             return "";
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 2]["tech"];
+                //             let ballpos = rally[rally_seq + 2]["ballpos"];
+                //             let pos = rally[rally_seq + 2]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             if(ballpos != -1){
+                //                 return scale(y1);
+                //             }
+                //             return "";
+                //         } 
+                //     })
+                //     .attr("r", this_.score_r)
+                //     .attr("visibility", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "hidden";
+                //             }
+                //             let ballpos = rally[rally_seq - 1]["ballpos"];
+                            
+                //             if(ballpos != -1){
+                //                 return "visible";
+                //             }
+                //             return "hidden";
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "hidden";
+                //             }
+                            
+                //             let ballpos = rally[rally_seq]["ballpos"];
+
+                //            if(ballpos != -1){
+                //                 return "visible";
+                //             }
+                //             return "hidden";
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                            
+                //             let ballpos = rally[rally_seq + 1]["ballpos"];
+                            
+
+                //             if(ballpos != -1){
+                //                 return "visible";
+                //             }
+                //             return "hidden";
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                            
+                //             let ballpos = rally[rally_seq + 2]["ballpos"];
+
+                //             if(ballpos != -1){
+                //                 return "visible";
+                //             }
+                //             return "hidden";
+                //         } 
+                //     });
+            WinRate_fron.append("rect")//right
+                .attr("class", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
+                        }
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+
+                        return `score front_point player${rally[rally_seq-1]["hitplayer"]}${scale(y2)}`
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
+                        }
+                         let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq]["hitplayer"]}${scale(y2)}`
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+1]["hitplayer"]}${scale(y2)}`
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return "";
+                            }
+                            else{
+                                return "_neg";
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        return `score front_point player${rally[rally_seq+2]["hitplayer"]}${scale(y2)}`
+                    }
+                })
+                .attr("x", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 < 0){
+                            return "";
+                        }
+                        return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 < 0){
+                            return "";
+                        }
+                        return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2 - width_bar/2;
+                    }
+                })
+                .attr("y", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+
+                        return scale(y2);
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return scale_pos(value);
+                            }
+                            else{
+                                return y_max_neg;
+                                // return scale_neg(value);
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+                    } 
+                })
+                .attr("width", width_bar)
+                .attr("height", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                        y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
+
+                        y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq - 1]["tech"];
+                        let ballpos = rally[rally_seq - 1]["ballpos"];
+                        let pos = rally[rally_seq - 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+
+                        let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+
+                        return scale(y2);
+                    }
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq]["tech"];
+                        let ballpos = rally[rally_seq]["ballpos"];
+                        let pos = rally[rally_seq]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+                    }
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 1]["tech"];
+                        let ballpos = rally[rally_seq + 1]["ballpos"];
+                        let pos = rally[rally_seq + 1]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "";
+                        }
+                        
+                        let tech = rally[rally_seq + 2]["tech"];
+                        let ballpos = rally[rally_seq + 2]["ballpos"];
+                        let pos = rally[rally_seq + 2]["pos"];
+
+                        let min = 1, max = -1;
+                        let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                        if (min > y0){min = y0}
+                        if (max < y0){max = y0}
+                        
+                        let y1;
+                        if (ballpos != -1){
+                            y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                            if (min > y1){min = y1}
+                            if (max < y1){max = y1}
+                        }
+                    
+                        let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                        if (min > y2){min = y2}
+                        if (max < y2){max = y2}
+
+                        let pos_max = 0,
+                            pos_min = 0,
+                            neg_max = 0,
+                            neg_min = 0;
+                        if(max > 0){
+                            pos_max = max;
+                        }
+                        if(min < 0){
+                            pos_min = min;
+                        }
+                        
+                        let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_pos, y_max_pos]),
+                            scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                                                     .range([y_min_neg, y_max_neg]);
+                        function scale(value){
+                            if(value > 0){
+                                return y_min_pos - scale_pos(value);
+                            }
+                            else{
+                                return scale_neg(value) - y_max_neg;
+                            }
+
+                        }
+                        // let scale = d3.scaleLinear().domain([min, max])
+                        //                              .range([y_min, y_max]);
+                        return scale(y2);
+                    } 
+                })
+                .attr("visibility", function(d,i){
+                    let rally_seq = d["stroke_context"]["rally_seq"];
+                    let rally = d["stroke_context"]["rally"];
+
+                    let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                        y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                    if (WinRate_name == "LLWinRate"){
+                        if (rally_seq - 2 <  0){
+                            return "hidden";
+                        }
                         return "visible";
                     }
-                    return "hidden";
-
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "hidden";
-                    }
-                    
-                    let ballpos = rally[rally_seq + 2]["ballpos"];
-
-                    if(ballpos != -1){
+                    else if (WinRate_name == "LWinRate"){
+                        if (rally_seq - 1 <  0){
+                            return "hidden";
+                        }
                         return "visible";
                     }
-                    return "hidden";
-                } 
-            })
-            WinRate_fron.append("circle")//right
-            .attr("class", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"]
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
-                }
-            })
-            .attr("cx", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 < 0){
-                        return "";
-                    }
-                    return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 < 0){
-                        return "";
-                    }
-                    return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
-                }
-            })
-            .attr("cy", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
-
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
-
-                let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
-                    y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
-
-                    y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
-
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq - 1]["tech"];
-                    let ballpos = rally[rally_seq - 1]["ballpos"];
-                    let pos = rally[rally_seq - 1]["pos"];
-
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-
-                    let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
-
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
+                    else if (WinRate_name == "RWinRate"){
+                        if (rally_seq + 1 >=  rally.length){
+                            return "hidden";
                         }
-                        else{
-                            return scale_neg(value);
+                       
+                        return "visible";
+
+                    }
+                    else if (WinRate_name == "RRWinRate"){
+                        if (rally_seq + 2 >=  rally.length){
+                            return "hidden";
                         }
+                        
+                        return "visible";
+                    } 
+                });
+            // WinRate_fron.append("circle")//right
+                //     .attr("class", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"]
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq-1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+1]["hitplayer"]}`
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return `score front_point player${rally[rally_seq+2]["hitplayer"]}`
+                //         }
+                //     })
+                //     .attr("cx", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LLWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 < 0){
+                //                 return "";
+                //             }
+                //             return this_.LWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                //             return this_.RRWinRate_x0  + (this_.sma_rect_width + this_.sma_gap_width)*2 + this_.sma_rect_width/2;
+                //         }
+                //     })
+                //     .attr("cy", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
 
-                    }
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
 
-                    return scale(y2);
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq]["tech"];
-                    let ballpos = rally[rally_seq]["ballpos"];
-                    let pos = rally[rally_seq]["pos"];
+                //         let y_min_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5,
+                //             y_max_pos = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1,
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
+                //             y_min_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max_neg = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.5;
 
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq - 1]["tech"];
+                //             let ballpos = rally[rally_seq - 1]["ballpos"];
+                //             let pos = rally[rally_seq - 1]["pos"];
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y2);
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 1]["tech"];
-                    let ballpos = rally[rally_seq + 1]["ballpos"];
-                    let pos = rally[rally_seq + 1]["pos"];
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq - 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq - 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
+                //             let y2 = rally[rally_seq - 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
 
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y2);
+                //             }
 
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "";
-                    }
-                    
-                    let tech = rally[rally_seq + 2]["tech"];
-                    let ballpos = rally[rally_seq + 2]["ballpos"];
-                    let pos = rally[rally_seq + 2]["pos"];
+                //             return scale(y2);
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq]["tech"];
+                //             let ballpos = rally[rally_seq]["ballpos"];
+                //             let pos = rally[rally_seq]["pos"];
 
-                    let min = 1, max = -1;
-                    let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
-                    if (min > y0){min = y0}
-                    if (max < y0){max = y0}
-                    
-                    let y1;
-                    if (ballpos != -1){
-                        y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
-                        if (min > y1){min = y1}
-                        if (max < y1){max = y1}
-                    }
-                
-                    let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
-                    if (min > y2){min = y2}
-                    if (max < y2){max = y2}
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
 
-                    let pos_max = 0,
-                        pos_min = 0,
-                        neg_max = 0,
-                        neg_min = 0;
-                    if(max > 0){
-                        pos_max = max;
-                    }
-                    if(min < 0){
-                        pos_min = min;
-                    }
-                    
-                    let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_pos, y_max_pos]),
-                        scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
-                                                 .range([y_min_neg, y_max_neg]);
-                    function scale(value){
-                        if(value > 0){
-                            return scale_pos(value);
-                        }
-                        else{
-                            return scale_neg(value);
-                        }
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
 
-                    }
-                    // let scale = d3.scaleLinear().domain([min, max])
-                    //                              .range([y_min, y_max]);
-                    return scale(y2);
-                } 
-            })
-            .attr("r", this_.score_r)
-            .attr("visibility", function(d,i){
-                let rally_seq = d["stroke_context"]["rally_seq"];
-                let rally = d["stroke_context"]["rally"];
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y2);
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 1]["tech"];
+                //             let ballpos = rally[rally_seq + 1]["ballpos"];
+                //             let pos = rally[rally_seq + 1]["pos"];
 
-                let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
-                    y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 1]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 1]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 1]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
 
-                if (WinRate_name == "LLWinRate"){
-                    if (rally_seq - 2 <  0){
-                        return "hidden";
-                    }
-                    return "visible";
-                }
-                else if (WinRate_name == "LWinRate"){
-                    if (rally_seq - 1 <  0){
-                        return "hidden";
-                    }
-                    return "visible";
-                }
-                else if (WinRate_name == "RWinRate"){
-                    if (rally_seq + 1 >=  rally.length){
-                        return "hidden";
-                    }
-                   
-                    return "visible";
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
 
-                }
-                else if (WinRate_name == "RRWinRate"){
-                    if (rally_seq + 2 >=  rally.length){
-                        return "hidden";
-                    }
-                    
-                    return "visible";
-                } 
-            })
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y2);
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "";
+                //             }
+                            
+                //             let tech = rally[rally_seq + 2]["tech"];
+                //             let ballpos = rally[rally_seq + 2]["ballpos"];
+                //             let pos = rally[rally_seq + 2]["pos"];
+
+                //             let min = 1, max = -1;
+                //             let y0 = rally[rally_seq + 2]["winning_rate"]["tech"][tech];
+                //             if (min > y0){min = y0}
+                //             if (max < y0){max = y0}
+                            
+                //             let y1;
+                //             if (ballpos != -1){
+                //                 y1 = rally[rally_seq + 2]["winning_rate"]["ballpos"][ballpos];
+                //                 if (min > y1){min = y1}
+                //                 if (max < y1){max = y1}
+                //             }
+                        
+                //             let y2 = rally[rally_seq + 2]["winning_rate"]["pos"][pos];
+                //             if (min > y2){min = y2}
+                //             if (max < y2){max = y2}
+
+                //             let pos_max = 0,
+                //                 pos_min = 0,
+                //                 neg_max = 0,
+                //                 neg_min = 0;
+                //             if(max > 0){
+                //                 pos_max = max;
+                //             }
+                //             if(min < 0){
+                //                 pos_min = min;
+                //             }
+                            
+                //             let scale_pos = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_pos, y_max_pos]),
+                //                 scale_neg = d3.scaleLinear().domain([pos_min, pos_max])
+                //                                          .range([y_min_neg, y_max_neg]);
+                //             function scale(value){
+                //                 if(value > 0){
+                //                     return scale_pos(value);
+                //                 }
+                //                 else{
+                //                     return scale_neg(value);
+                //                 }
+
+                //             }
+                //             // let scale = d3.scaleLinear().domain([min, max])
+                //             //                              .range([y_min, y_max]);
+                //             return scale(y2);
+                //         } 
+                //     })
+                //     .attr("r", this_.score_r)
+                //     .attr("visibility", function(d,i){
+                //         let rally_seq = d["stroke_context"]["rally_seq"];
+                //         let rally = d["stroke_context"]["rally"];
+
+                //         let y_min = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.9,
+                //             y_max = i*(this_.rect_height + this_.sma_gap_height) + this_.top_gap + this_.rect_height * 0.1;
+
+                //         if (WinRate_name == "LLWinRate"){
+                //             if (rally_seq - 2 <  0){
+                //                 return "hidden";
+                //             }
+                //             return "visible";
+                //         }
+                //         else if (WinRate_name == "LWinRate"){
+                //             if (rally_seq - 1 <  0){
+                //                 return "hidden";
+                //             }
+                //             return "visible";
+                //         }
+                //         else if (WinRate_name == "RWinRate"){
+                //             if (rally_seq + 1 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                           
+                //             return "visible";
+
+                //         }
+                //         else if (WinRate_name == "RRWinRate"){
+                //             if (rally_seq + 2 >=  rally.length){
+                //                 return "hidden";
+                //             }
+                            
+                //             return "visible";
+                //         } 
+                //     });
 
             
         }

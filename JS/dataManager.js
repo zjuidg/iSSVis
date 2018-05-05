@@ -61,7 +61,7 @@ class dataManager {
 	}
 	read_store(){
 		//if strike_effect == 0, let it be 5 or 6
-		d3.csv("SRC/system/W_vs_L_09.02.17.09.csv", (error, csvdata)=>{
+		d3.csv("SRC/system/W_vs_L_07.07.26.csv", (error, csvdata)=>{
 			let csvdata_ = [];
 			let game_seq = 0;
 			let rally_seq = 0;
